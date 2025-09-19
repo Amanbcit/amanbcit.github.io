@@ -23,7 +23,7 @@
     <main>
       <section id="about">
         <div class="headshot">
-          <img src="./assets/images/user.png" alt="" />
+          <img src="./assets/images/undraw_developer-avatar_f6ac.svg" alt="" />
         </div>
         <div class="about-text">
           <h1>About Me</h1>
@@ -34,14 +34,91 @@
             quae, id at omnis cum.
           </p>
           <ul class="skills-list">
-            <li>Skill1</li>
-            <li>Skill2</li>
-            <li>Skills3</li>
+            <li class="tab-links active-skill" onclick="opentab('skills')">
+              Skills
+            </li>
+            <li class="tab-links" onclick="opentab('experience')">
+              Experience
+            </li>
+            <li class="tab-links" onclick="opentab('education')">Education</li>
           </ul>
+          <section class="skills-content active-content" id="skills">
+            <ul>
+              <li>
+                UI/UX <br />
+                Well designed web/aap interfaces that make clients click
+              </li>
+              <li>
+                Frontend development <br />
+                Fully optimsed and responsive Frontend
+              </li>
+              <li>
+                Backend development <br />
+                Robust backend using latest tchnologies
+              </li>
+            </ul>
+          </section>
+          <section class="skills-content" id="experience">
+            <ul>
+              <li>
+                Fibre-tech <br />
+                Well designed web/aap interfaces that make clients click
+              </li>
+              <li>
+                Frontend development <br />
+                Fully optimsed and responsive Frontend
+              </li>
+              <li>
+                Backend development <br />
+                Robust backend using latest tchnologies
+              </li>
+            </ul>
+          </section>
+          <section class="skills-content" id="education">
+            <ul>
+              <li>
+                BCIT <br />
+                Well designed web/aap interfaces that make clients click
+              </li>
+              <li>
+                Frontend development <br />
+                Fully optimsed and responsive Frontend
+              </li>
+              <li>
+                Backend development <br />
+                Robust backend using latest tchnologies
+              </li>
+            </ul>
+          </section>
         </div>
       </section>
     </main>
-
     <script src="./assets/app.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("skills-content");
+
+        var clickedTab = event.currentTarget;
+        var clickedContent = document.getElementById(tabname);
+
+        function opentab(tabname) {
+          if (clickedTab.classList.contains("active-skill")) {
+            clickedTab.classList.remove("active-skill");
+            clickedTab.classList.remove("active-content");
+            return;
+          }
+
+          for (let tablink of tablinks) {
+            tablink.classList.remove("active-skill");
+          }
+          for (let tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-content");
+          }
+          clickedTab.classList.add("active-skill");
+          clickedContent.classList.add("active-content");
+        }
+      });
+    </script>
   </body>
 </html>

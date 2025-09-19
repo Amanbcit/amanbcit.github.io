@@ -123,7 +123,7 @@ width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
-    border-radius: 1rem;
+    border-radius: 13rem;
 }
 #about .about-text{
     flex-basis: 60%;
@@ -145,7 +145,7 @@ width: 100%;
     margin-top: 1.2rem; 
     gap: 5rem;
 }
-.about-text ul li {
+.about-text .skills-list li {
     margin: 10px 0;
     font-size: 1rem;
     list-style: none;
@@ -156,7 +156,7 @@ width: 100%;
     color: #9e9e9e;
 }
 
-.about-text ul li::after{
+.about-text .skills-list li::after{
     content: '';
     width: 0;
     height: 3px;
@@ -166,6 +166,25 @@ width: 100%;
     position: absolute;
     transition: 0.5s;
 }
-.about-text ul li:hover::after {
+.about-text .skills-list li:hover::after {
     width: 100%;
+}
+
+.about-text .skills-list .active-skill::after{
+    width: 50%;
+}
+
+.skills-content ul li{
+    list-style: none;
+    margin: 0.6rem 0;
+    font-size: 1rem;
+}
+
+.skills-content {
+    display: none;
+}
+
+.skills-content.active-content{
+    display: block;
+    transition: color 0.5s ease-in;
 }
