@@ -186,5 +186,4 @@ width: 100%;
 
 .skills-content.active-content{
     display: block;
-    transition: color 0.5s ease-in;
 }
