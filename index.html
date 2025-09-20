@@ -10,11 +10,10 @@
   <body>
     <header class="header">
       <div class="navcontainer">
-        <nav>
+        <nav id="nav-menu">
           <p class="logo"><span>A</span>man</p>
           <ul>
             <li><a href="./index.html" class="active-nav">Home</a></li>
-            <li><a href="./about.html" >About</a></li>
             <li><a href="./projects.html">Projects</a></li>
             <li><a href="./contact.html">Contact</a></li>
           </ul>
@@ -26,9 +25,105 @@
       </div>
     </header>
     <main>
-      
+      <section id="about">
+        <div class="about-text">
+          <h1>About Me</h1>
+          <p>
+            Hi there, my name is Amandeep, but most people call me Aman. I'm
+            currently a full-stack developer in training at
+            <strong>BCIT</strong>. I've always been passionate about building
+            solutions with code — making computers do what most people can't. <br><br>
+          </p>
+          <p>
+            Over the years, I've had the opportunity to work across diverse
+            industries, from fitness and construction to fiber optics. No matter
+            where I was, my curiosity for the technology behind it all kept
+            growing. <br><br>
+          </p>
+          <p>
+            After nearly a decade, I decided to follow that calling — because
+            you only live once — and committed to building a career in software
+            development. <br><br>
+          </p>
+          <ul class="skills-list">
+            <li
+              class="tab-links active-skill"
+              onclick="opentab(event,'skills')"
+            >
+              Skills
+            </li>
+            <li class="tab-links" onclick="opentab(event,'experience')">
+              Experience
+            </li>
+            <li class="tab-links" onclick="opentab(event,'education')">
+              Education
+            </li>
+          </ul>
+          <section class="skills-content active-content" id="skills">
+            <ul>
+              <li>
+                <span>Full-Stack Development</span> <br />
+                Proficient in React, Angular, Vue, Node.js, C#, .NET Framework,
+                and SQL Server
+              </li>
+              <li>
+                <span>Frontend Expertise</span> <br />
+                Building responsive, accessible, and user-focused applications
+                with HTML, CSS, and JavaScript
+              </li>
+              <li>
+                <span>Cybersecurity & Best Practices</span> <br />
+                Applying secure coding standards and system protection measures
+              </li>
+            </ul>
+          </section>
+
+          <section class="skills-content" id="experience">
+            <ul>
+              <li>
+                <span>Fibre-Tech (Optical-Fibre Technician)</span> <br />
+                Hands-on technical expertise with precision installation and
+                troubleshooting
+              </li>
+              <li>
+                <span>General Manager - Fitness Industry</span> <br />
+                Leadership experience managing operations, staff, and client
+                relationships
+              </li>
+              <li>
+                <span>Drywall Supervisor</span> <br />
+                Project supervision and team coordination in high-paced
+                construction environments
+              </li>
+            </ul>
+          </section>
+
+          <section class="skills-content" id="education">
+            <ul>
+              <li>
+                <span>BCIT - Software Systems Developer</span> <br />
+                Specialized training in full-stack development and software
+                architecture
+              </li>
+              <li>
+                <span>Douglas College - General Studies</span> <br />
+                Multidisciplinary foundation with diverse academic background
+              </li>
+              <li>
+                <span>Continuous Learning </span><br />
+                Expanding knowledge in cybersecurity, databases, and modern
+                frameworks
+              </li>
+            </ul>
+          </section>
+        </div>
+        <div class="headshot">
+          <img src="./assets/images/Subject.JPG" alt="" />
+        </div>
+      </section>
     </main>
 
     <script src="./assets//scripts/app.js" defer></script>
+    <script src="./assets/scripts/about.js" defer></script>
   </body>
 </html>
