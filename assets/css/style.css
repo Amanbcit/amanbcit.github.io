@@ -1,7 +1,7 @@
 :root {
   --primary-color: #1c1d20;
   --secondary-color: #4a4d57;
-  --background-color: #000000;
+  --background-color:#1c1d20;
   --accent-color: #00ffc4;
   --font-color: #f9f9f9;
 }
@@ -19,7 +19,12 @@ body{
     background-color: var(--background-color);
     background-size: cover;
     background-attachment: fixed; 
+    overflow-x: clip;
 
+}
+
+.main-index{
+    padding: 5rem;
 }
 
 
@@ -27,16 +32,16 @@ body{
 
 /* ----------------------------------------------Header-Section------------------------------------------*/
 .header {
-    width: 100%;
-    height: 100vh;
-    background-image: url(./images/textured-baground.jpg);
+    width: 100dvw;
+    height: 100dvh;
+    background-image: url(/Portfolio_project/assets/images/textured-baground.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
 .navcontainer{
-    padding: 0.6rem 10%;
+    padding: 1rem 5rem;   
 }
 
 nav{
@@ -45,27 +50,30 @@ nav{
     justify-content: space-between;
     flex-wrap: wrap;
     position:fixed;
+    z-index: 100;
+    top: 2rem;
     width: 80dvw;
-    transition: all 0.7s ease-out;
+    transition: all 0.4s ease-out;
+    
 }
 
 #nav-menu.scrolled{
     border-radius: 1rem;
     padding: 1rem;
-    box-shadow: 0px 2px 4px rgba(166, 185, 178, 0.547); /* Blue shadow, 50% opaque */
-    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.6);
-    transition: all 0.6s ease-in;
+    box-shadow: 4px 2px 4px  rgba(166, 185, 178, 0.547); 
+    text-shadow: 2px 2px 8px rgba(10, 212, 195, 0.6);
+    transition: all 0.4s ease-in;
+    background: #1c1d20e3;
+
     
 }
 
-#nav-menu:hover{
-    background-color: #eadedea1;
-    
+#nav-menu:hover{    
     border-radius: 1rem;
     padding: 1rem;
-    box-shadow: 4px 2px 4px rgba(166, 185, 178, 0.547); /* Blue shadow, 50% opaque */
+    box-shadow: 4px 2px 4px  rgba(166, 185, 178, 0.547); 
     text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.6);
-    transition: all 0.6s ease-in;
+    transition: all 0.4s ease-in;
     
 }
 
@@ -74,6 +82,7 @@ nav{
 }
 .logo {
     font-size: 2rem;
+    margin-left: 1rem;
 }
 
 
@@ -125,6 +134,7 @@ nav ul li a.active-nav::after{
 .header-text p span{
     color: var(--accent-color);
     position: relative;
+    z-index: 0;
     display: inline-block;
 }
 
@@ -166,8 +176,10 @@ nav ul li a.active-nav::after{
 #about .about-text{
     flex-basis: 60%;
 }
-#about .about-text h1 {
+#about .about-text h2 {
     font-size: 4rem;
+    font-weight: lighter;
+    margin-bottom: 2rem;
 }
 
 #about .about-text p {
@@ -234,4 +246,8 @@ nav ul li a.active-nav::after{
 
 .skills-content span{
     color:var(--accent-color);
+}
+
+@media  screen and  (max-width:700px) {
+      
 }

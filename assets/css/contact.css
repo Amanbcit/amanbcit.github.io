@@ -1,0 +1,92 @@
+:root {
+  --primary-color: #1c1d20;
+  --secondary-color: #4a4d57;
+  --background-color: #1c1d20;
+  --accent-color: #00ffc4;
+  --font-color: #f9f9f9;
+}
+
+header h1 {
+  position: relative;
+  top: 20dvh;
+  left: 10rem;
+  padding: 2rem;
+  font-size: 4rem;
+  font-weight: lighter;
+}
+
+.main-contact {
+  height: auto;
+  padding-left: 10rem;
+  overflow-y: clip;
+}
+
+#contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  height: 100dvh;
+  position: relative;
+  top: 12rem;
+}
+
+.contact-info {
+  flex-basis: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  height: 100%;
+  padding-top: 2.5rem;
+  padding-left: 3rem;
+}
+
+.contact-form {
+  flex-basis: 60%;
+  padding: 0.5rem;
+}
+
+h2,
+h3,
+h4 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-info-content {
+  font-weight: lighter;
+}
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.input-form span {
+  margin-right: 2rem;
+  color: var(--secondary-color);
+}
+
+form input,
+textarea {
+  margin-bottom: 3rem;
+  width: 100%;
+  padding: 1rem 1rem 1rem 4rem;
+  border: none;
+  font-size: 1rem;
+  background: none;
+  caret-color: var(--accent-color);
+  border-bottom: 1px solid var(--secondary-color);
+  color: var(--font-color);
+}
+
+textarea,
+input:focus {
+  outline: none;
+}
+
+input:focus-within label {
+  color: var(--secondary-color);
+}
