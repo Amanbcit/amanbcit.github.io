@@ -3,11 +3,12 @@
 
 
 window.addEventListener("scroll", function () {
-  const header = document.querySelector('.header');
+  const header = document.querySelector('.paralax');
   if (header) {
     header.style.backgroundPosition = `center ${-window.scrollY * 0.5}px`;
   }
 });
+
 
 //adding scroll detction for the navigation bar 
 

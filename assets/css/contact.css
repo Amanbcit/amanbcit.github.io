@@ -1,34 +1,37 @@
 :root {
-  --primary-color: #1c1d20;
-  --secondary-color: #4a4d57;
-  --background-color: #1c1d20;
-  --accent-color: #00ffc4;
-  --font-color: #f9f9f9;
+  --primary-color: #0a0a0a;
+  --secondary-color: #817c7c;
+  --background-color: #ffffff;
+  --accent-color: #1fff06;
+  --font-white: #ffffff;
+  --font-black: #4a4343;
 }
+
 
 header h1 {
   position: relative;
   top: 20dvh;
-  left: 10rem;
   padding: 2rem;
   font-size: 4rem;
   font-weight: lighter;
+  text-align: center;
+}
+
+header span {
+  color: var(--accent-color);
 }
 
 .main-contact {
   height: auto;
-  padding-left: 10rem;
-  overflow-y: clip;
 }
 
 #contact {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  width: 100%;
-  height: 100dvh;
+  align-content:center;
   position: relative;
   top: 12rem;
+  padding: 2rem;
 }
 
 .contact-info {
@@ -37,8 +40,7 @@ header h1 {
   flex-direction: column;
   gap: 4rem;
   height: 100%;
-  padding-top: 2.5rem;
-  padding-left: 3rem;
+  padding-top:1rem;
 }
 
 .contact-form {
@@ -49,7 +51,7 @@ header h1 {
 h2,
 h3,
 h4 {
-  font-size: 1rem;
+  font-size: 2rem;
   margin-bottom: 0.5rem;
 }
 
@@ -62,6 +64,7 @@ h4 {
   flex-direction: column;
   padding: 1rem;
   gap: 1rem;
+  font-size: 2rem;
 }
 
 .input-form span {

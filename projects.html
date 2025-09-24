@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/normalize.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/projects.css" />
     <title>About</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
       <div class="navcontainer">
-        <nav>
+        <nav id="nav-menu">
           <p class="logo"><span>A</span>man</p>
           <ul>
             <li><a href="./index.html">Home</a></li>
@@ -18,9 +23,48 @@
           </ul>
         </nav>
       </div>
+      <div class="proj-header"><h1>My Work</h1></div>
     </header>
+    <main>
+      <section class="cont-1"><img src="./assets/css/images/Todo.webp" alt="user interface of the todo app "></section>
+      <section class="abt-cont1">
+        <h2>ToDo App</h2>
+        <p>
+          A simple productivity app built with vanilla JavaScript, HTML, and
+          CSS. Users can add, delete, and mark todos as complete, with all tasks
+          saved in local storage for persistence.
+        </p>
+      </section>
+      <section class="cont-2"><img src="./assets/css/images/choredoor.webp" alt="user interface of game"></section>
+      <section class="abt-cont2">
+        <h2>Chors Doors Game</h2>
+        <p>
+          A browser-based game where players choose between three doors. Two
+          hide fun surprises, and one hides a chore-bot. The challenge is to
+          uncover both fun doors before finding the chore-bot.
+        </p>
+      </section>
+      <section class="cont-3"><img src="./assets/css/images/teacozy.webp" alt="front page of the website"></section>
+      <section class="abt-cont3">
+        <h2>Tea Cozy</h2>
+        <p>
+          A responsive, modern website designed for a café. Based on a
+          Codecademy project but completely restructured and redesigned for
+          better usability and style.
+        </p>
+      </section>
 
+      <section class="cont-4"><img src="./assets/css/images/webdesignsys.webp" alt="front page of the website"></section>
+      <section class="abt-cont4">
+        <h2>Web design System</h2>
+        <p>
+          A front-end design system created to maintain consistency across
+          projects. Includes reusable styles for typography, color palettes,
+          buttons, links, and hover states.
+        </p>
+      </section>
+    </main>
     <script src="./assets//scripts/app.js" defer></script>
     <script src="assets/scripts/about.js" defer></script>
-</body>
+  </body>
 </html>

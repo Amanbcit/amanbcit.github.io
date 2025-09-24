@@ -3,103 +3,106 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/normalize.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/contact.css" />
     <title>Contact</title>
   </head>
+  <!-- <body class="paralax"> -->
   <body>
-      <header>
-        <div class="navcontainer">
-          <nav id="nav-menu">
-            <p class="logo"><span>A</span>man</p>
-            <ul>
-              <li><a href="./index.html">Home</a></li>
-              <li><a href="./projects.html">Projects</a></li>
-              <li><a href="./contact.html" class="active-nav">Contact</a></li>
-            </ul>
-          </nav>
+    <header>
+      <div class="navcontainer">
+        <nav id="nav-menu">
+          <p class="logo"><span>A</span>man</p>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./contact.html" class="active-nav">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <h1>Let's <span>create</span> something <br />special togeter</h1>
+    </header>
+    <main class="main-contact">
+      <section id="contact">
+        <div class="contact-form">
+          <form action="submit" class="input-form">
+            <label for="name"> <span>01.</span>What's your name?</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Amandeep Singh"
+              required
+            />
+
+            <label for="email"><span>02.</span>What's your email?</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="amn.s.dev@gmail.com"
+            />
+
+            <label for="org-name"
+              ><span>03.</span>Organization/Business?
+            </label>
+            <input
+              type="text"
+              id="org-name"
+              name="org-name"
+              placeholder="@tech_cosultancy"
+            />
+
+            <label for="services"><span>04.</span>How can I help?</label>
+            <input
+              type="text"
+              id="first-name"
+              name="first-name"
+              placeholder="Front-End, Back-End or Full-Stack"
+              required
+            />
+
+            <label for="message"><span>05.</span>Your message</label>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Hi ! nice to meet you....."
+            ></textarea>
+          </form>
         </div>
-        <h1>Let's create something <br />special togeter</h1>
-      </header>
-      <main class="main-contact">
-        <section id="contact">
-          <div class="contact-form">
-            <form action="submit" class="input-form">
-              <label for="name"> <span>01.</span>What's your name?</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Amandeep Singh"
-                required
-              />
-
-              <label for="email"><span>02.</span>What's your email?</label>
-              <input
-                type="text"
-                id="email"
-                name="email"
-                placeholder="amn.s.dev@gmail.com"
-              />
-
-              <label for="org-name"
-                ><span>03.</span>Organization/Business?
-              </label>
-              <input
-                type="text"
-                id="org-name"
-                name="org-name"
-                placeholder="@tech_cosultancy"
-              />
-
-              <label for="services"
-                ><span>04.</span>How can I help?</label
-              >
-              <input
-                type="text"
-                id="first-name"
-                name="first-name"
-                placeholder="Front-End, Back-End or Full-Stack"
-                required
-              />
-
-              <label for="message"><span>05.</span>Your message</label>
-              <textarea
-                name="message"
-                id="message"
-                placeholder="Hi ! nice to meet you....."
-              ></textarea>
-            </form>
+        <div class="contact-info">
+          <div class="contact-info-content">
+            <h2>Contact Details</h2>
+            <p>
+              639-470-2666 <br />
+              amn.s.dev@gmail.com
+            </p>
           </div>
-          <div class="contact-info">
-            <div class="contact-info-content">
-              <h2>Contact Details</h2>
-              <p>
-                639-470-2666 <br />
-                amn.s.dev@gmail.com
-              </p>
-            </div>
-            <div class="contact-info-content">
-              <h3>Bussiness Details</h3>
-              <p>
-                Vancouver <br />
-                British Columbia <br />
-                Canada
-              </p>
-            </div>
-            <div class="contact-info-content">
-              <h3>Socials</h3>
-              <p>
-                Instagram <br />
-                LinkedIN <br />
-                Discord
-              </p>
-            </div>
+          <div class="contact-info-content">
+            <h3>Bussiness Details</h3>
+            <p>
+              Vancouver <br />
+              British Columbia <br />
+              Canada
+            </p>
           </div>
-        </section>
-      </main>
+          <div class="contact-info-content">
+            <h3>Socials</h3>
+            <p>
+              Instagram <br />
+              LinkedIN <br />
+              Discord
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
 
-      <script src="./assets/scripts/app.js" defer></script>
-      <script src="./assets/scripts/about.js" defer></script>
+    <script src="./assets/scripts/app.js" defer></script>
+    <script src="./assets/scripts/about.js" defer></script>
   </body>
 </html>

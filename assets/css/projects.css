@@ -1,0 +1,113 @@
+:root {
+  --primary-color: #0a0a0a;
+  --secondary-color: #817c7c;
+  --background-color: #ffffff;
+  --accent-color: #1fff06;
+  --font-white: #ffffff;
+  --font-black: #4a4343;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.proj-header {
+  text-align: center;
+  margin-top: 10rem;
+  padding: 1rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 4fr);
+  grid-template-areas:
+    "cont1   abt1"
+    "abt2    cont2"
+    "cont3   abt3"
+    "abt4     cont4 ";
+
+  height: 200vh;
+  width: 80vw;
+  margin: 1rem;
+  padding: 3rem;
+  background: linear-gradient(
+        to right,
+        rgba(220, 227, 222, 0.724),
+        rgba(245, 245, 245, 0.8)
+      )
+      center center,
+    url(./images/Tile-Pattern--Arvin.svg);
+  background-position: center center;
+  border-radius: 4rem;
+}
+
+.cont-1 {
+  grid-area: cont1;
+}
+.cont-2 {
+  grid-area: cont2;
+}
+.cont-3 {
+  grid-area: cont3;
+}
+.cont-4 {
+  grid-area: cont4;
+}
+
+bt-cont1 {
+  grid-area: abt1;
+}
+.abt-cont2 {
+  grid-area: abt2;
+}
+.abt-cont3 {
+  grid-area: abt3;
+}
+.abt-cont4 {
+  grid-area: abt4;
+}
+
+/* Content sections (left column) */
+.cont-1,
+.cont-2,
+.cont-3,
+.cont-4 {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+/* About sections (right column) */
+.abt-cont1,
+.abt-cont2,
+.abt-cont3,
+.abt-cont4 {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding: 1rem;  
+}
+
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas:
+      "cont1"
+      "abt1"
+      "cont2"
+      "abt2"
+      "cont3"
+      "abt3"
+      "cont4"
+      "abt4";
+    height: auto;
+    width: 400px;
+    min-height: 100vh;
+  }
+}
