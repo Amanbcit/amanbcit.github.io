@@ -5,29 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/normalize.css" />
-    <!--primary CSS file -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/css/images/favicon.png"
+      type="image/x-icon"
+    />
     <title>Aman's Portfolio</title>
   </head>
   <body>
     <header class="header paralax">
       <div class="navcontainer">
         <nav id="nav-menu">
-          <p class="logo"><span>A</span>man</p>
+          <div class="logo">
+            <img
+              src="./assets/css/images/logo.png"
+              alt="Aman's Portfolio Logo"
+            />
+          </div>
           <ul>
-            <li><a href="./index.html" class="active-nav">Home</a></li>
-            <li><a href="./projects.html">Projects</a></li>
-            <li><a href="./contact.html">Contact</a></li>
+            <li>
+              <a href="./index.html" class="active-nav">Home</a>
+            </li>
+            <li>
+              <a href="./projects.html">Projects</a>
+            </li>
+            <li>
+              <a href="./contact.html">Contact</a>
+            </li>
           </ul>
         </nav>
       </div>
       <section class="header-text">
-          <h1>Hi, I'm <span>Aman</span></h1>
-          <p><span>Full-Stack</span> solutions Developer dedicated to crafting intuitive, <br>high-performing <span>websites</span> and <span>applications</span>  that empower products to thrive.</p>
+        <h1>Hi, I'm <span>Aman</span></h1>
+        <p>
+          <span>Full-Stack</span> solutions Developer dedicated to crafting
+          intuitive, <br />high-performing <span>websites</span> and
+          <span>applications</span> that empower products to thrive.
+        </p>
+      </section>
+      <h2>Client Testimonials</h2>
+      <section class="testimonials">      
+        <div class="testimonial-container">
+          <article class="testimonial-tab">
+            <p>Sarah Chen, CTO</p>
+            <q>Exceptional problem solver</q>
+            <blockquote cite="https://example.com/testimonial1">
+              "Aman delivered a complex e-commerce platform ahead of schedule.
+              His attention to detail and ability to translate business
+              requirements into elegant code is outstanding. Our conversion rate
+              improved by 40% after launch."
+            </blockquote>
+          </article>
+
+          <article class="testimonial-tab">
+            <p>Marcus Rodriguez, Startup Founder</p>
+            <q>Full-stack excellence</q>
+            <blockquote cite="https://example.com/testimonial2">
+              "Working with Aman was a game-changer for our MVP. He built both
+              our React frontend and Node.js backend with clean, scalable code.
+              His diverse industry background helped him understand our unique
+              challenges perfectly."
+            </blockquote>
+          </article>
+          <article class="testimonial-tab">
+            <p>Jennifer Park, Product Manager</p>
+            <q>Reliable and innovative</q>
+            <blockquote cite="https://example.com/testimonial3">
+              "Aman's experience across different industries really shows in his
+              work. He anticipated edge cases we hadn't considered and
+              implemented solutions that made our app more robust. Definitely
+              someone you want on your team."
+            </blockquote>
+          </article>
+        </div>
       </section>
     </header>
+
     <main class="main-index">
       <section id="about">
         <div class="about-text">
@@ -123,12 +182,18 @@
           </section>
         </div>
         <div class="headshot">
-          <img src=" " alt="" />
+          <img
+            src="./assets/css/images/Subject.png"
+            alt="Professional headshot of Aman"
+          />
         </div>
       </section>
     </main>
 
-    <script src="./assets//scripts/app.js" defer></script>
+    <footer>
+      <p>Made with <span>&hearts;</span> by Aman. &copy; 2025 SSD</p>
+    </footer>
+    <script src="./assets/scripts/app.js" defer></script>
     <script src="./assets/scripts/about.js" defer></script>
   </body>
 </html>

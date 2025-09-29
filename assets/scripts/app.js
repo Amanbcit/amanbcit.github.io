@@ -1,7 +1,4 @@
-
-
-
-
+//paralax effect on the header baground
 window.addEventListener("scroll", function () {
   const header = document.querySelector('.paralax');
   if (header) {

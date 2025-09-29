@@ -1,108 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/normalize.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/contact.css" />
-    <title>Contact</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/normalize.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/contact.css" />
+  <link rel="shortcut icon" href="./assets/css/images/favicon.png" type="image/x-icon" />
+  <title>Contact</title>
   </head>
-  <!-- <body class="paralax"> -->
-  <body>
-    <header>
-      <div class="navcontainer">
-        <nav id="nav-menu">
-          <p class="logo"><span>A</span>man</p>
-          <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./projects.html">Projects</a></li>
-            <li><a href="./contact.html" class="active-nav">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-      <h1>Let's <span>create</span> something <br />special togeter</h1>
-    </header>
-    <main class="main-contact">
+
+ <body>
+  <header>
+    <div class="navcontainer">
+      <nav id="nav-menu">
+        <div class="logo">
+          <img src="./assets/css/images/logo.png"/>
+        </div>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./projects.html">Projects</a></li>
+          <li><a href="./contact.html" class="active-nav">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <h1>Let's <span>create</span> something <br>special together</h1>
+  </header>
+
+  <main>
+    <div class="main-contact">
       <section id="contact">
         <div class="contact-form">
           <form action="submit" class="input-form">
-            <label for="name"> <span>01.</span>What's your name?</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Amandeep Singh"
-              required
-            />
+            <label for="name"><span>01.</span>What's your name?</label>
+            <input type="text" id="name" name="name" placeholder="Amandeep Singh"/>
 
             <label for="email"><span>02.</span>What's your email?</label>
-            <input
-              type="text"
-              id="email"
-              name="email"
-              placeholder="amn.s.dev@gmail.com"
-            />
+            <input type="email" id="email" name="email" placeholder="amn.s.dev@gmail.com"/>
 
-            <label for="org-name"
-              ><span>03.</span>Organization/Business?
-            </label>
-            <input
-              type="text"
-              id="org-name"
-              name="org-name"
-              placeholder="@tech_cosultancy"
-            />
+            <label for="org-name"><span>03.</span>Organization / Business?</label>
+            <input type="text" id="org-name" name="org-name" placeholder="@tech_consultancy" />
 
             <label for="services"><span>04.</span>How can I help?</label>
-            <input
-              type="text"
-              id="first-name"
-              name="first-name"
-              placeholder="Front-End, Back-End or Full-Stack"
-              required
-            />
+            <input type="text" id="services" name="services" placeholder="Front-End, Back-End or Full-Stack" required/>
 
             <label for="message"><span>05.</span>Your message</label>
-            <textarea
-              name="message"
-              id="message"
-              placeholder="Hi ! nice to meet you....."
-            ></textarea>
+            <textarea name="message" id="message" placeholder="Hi! Nice to meet you....."></textarea>
           </form>
         </div>
-        <div class="contact-info">
+
+        <aside class="contact-info">
           <div class="contact-info-content">
             <h2>Contact Details</h2>
             <p>
-              639-470-2666 <br />
+              639-470-2666<br>
               amn.s.dev@gmail.com
             </p>
           </div>
           <div class="contact-info-content">
-            <h3>Bussiness Details</h3>
-            <p>
-              Vancouver <br />
-              British Columbia <br />
+            <h3>Business Details</h3>
+            <address>
+              Vancouver<br>
+              British Columbia<br>
               Canada
-            </p>
+            </address>
           </div>
           <div class="contact-info-content">
-            <h3>Socials</h3>
-            <p>
-              Instagram <br />
-              LinkedIN <br />
-              Discord
-            </p>
+            <table>
+              <tr>
+                <th>
+                  <h4>Socials</h4>
+                </th>
+              </tr>
+              <tr>
+                <td>Instagram</td>
+              </tr>
+              <tr>
+                <td>LInkedIn</td>
+              </tr>
+              <tr>
+                <td>GitHub</td>
+              </tr>
+            </table>
           </div>
-        </div>
+        </aside>
       </section>
-    </main>
+    </div>
 
-    <script src="./assets/scripts/app.js" defer></script>
-    <script src="./assets/scripts/about.js" defer></script>
-  </body>
+    <section class="faqs">
+      <h2 class="faq-heading">Frequently Asked Questions</h2>
+
+      <details class="question-1">
+        <summary>What kind of projects interest me?</summary>
+        <p>
+          Being a full stack developer, I am open to broad scope of problems
+          to solve.
+        </p>
+      </details>
+
+      <details class="question-2">
+        <summary>
+          How does working in different industries serve my technical
+          expertise?
+        </summary>
+        <p>
+          Being experienced in multiple disciplines helps me understand
+          different working and cultural environments and the problems they
+          face.
+        </p>
+      </details>
+
+      <details class="question-3">
+        <summary>What technologies do I specialize in?</summary>
+        <div class="summary-cont">
+          <p>I specialize in modern web technologies including React, Node.js, and various database systems for
+            comprehensive full-stack solutions.</p>
+        </div>
+      </details>
+    </section>
+  </main>
+  <footer>
+    <p>Made with <span>&hearts;</span> by Aman. &copy; 2025 SSD</p>
+  </footer>
+ </body>
 </html>

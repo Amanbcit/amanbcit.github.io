@@ -1,48 +1,80 @@
+/* ----------------------------------------------CSS Variables------------------------------------------*/
 :root {
-  --primary-color: #0a0a0a;
+  --primary-color: #080808;
   --secondary-color: #817c7c;
   --background-color: #ffffff;
-  --accent-color: #1fff06;
+  --accent-color: #e494f9;
   --font-white: #ffffff;
-  --font-black: #4a4343;
+  --font-grey: #2d2626;
 }
 
+/* ----------------------------------------------Reset & Base Styles------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Belanosima", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* ----------------------------------------------Body------------------------------------------*/
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: radial-gradient(
+      circle,
+      rgba(114, 103, 126, 0.837) 50%,
+      rgba(54, 47, 47, 0.8) 70%
+    ),
+    url(./images/Alternating-ZigZag.svg);
+  background-position: center;
 }
+
+/* ----------------------------------------------Header Section------------------------------------------*/
 .proj-header {
   text-align: center;
-  margin-top: 10rem;
+  margin-top: 8rem;
   padding: 1rem;
+  font-size: clamp(1rem, 4vw, 4rem);
+  color: var(--font-white);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  
+
+
 }
 
+.proj-header span {
+  color: var(--accent-color);
+}
+
+/* ----------------------------------------------Main Projects Section------------------------------------------*/
 main {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(4, 4fr);
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(8, 1fr);
   grid-template-areas:
-    "cont1   abt1"
-    "abt2    cont2"
-    "cont3   abt3"
-    "abt4     cont4 ";
-
-  height: 200vh;
-  width: 80vw;
+    "cont1"
+    "abt1"
+    "cont2"
+    "abt2"
+    "cont3"
+    "abt3"
+    "cont4"
+    "abt4";
+  width: 95vw;
+  max-width: 400px;
   margin: 1rem;
-  padding: 3rem;
-  background: linear-gradient(
-        to right,
-        rgba(220, 227, 222, 0.724),
-        rgba(245, 245, 245, 0.8)
-      )
-      center center,
-    url(./images/Tile-Pattern--Arvin.svg);
-  background-position: center center;
-  border-radius: 4rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px hsla(0, 10%, 10%, 0.792);
+  backdrop-filter: blur(12px);
+  min-height: auto;
 }
 
+/* ----------------------------------------------Grid Areas------------------------------------------*/
 .cont-1 {
   grid-area: cont1;
 }
@@ -56,7 +88,7 @@ main {
   grid-area: cont4;
 }
 
-bt-cont1 {
+.abt-cont1 {
   grid-area: abt1;
 }
 .abt-cont2 {
@@ -69,45 +101,196 @@ bt-cont1 {
   grid-area: abt4;
 }
 
-/* Content sections (left column) */
+/* ----------------------------------------------Project Images------------------------------------------*/
 .cont-1,
 .cont-2,
 .cont-3,
 .cont-4 {
-
   display: flex;
   align-items: center;
   justify-content: center;
-
-
+  padding: 1rem;
+  transition: all 0.3s ease-out;
 }
 
-/* About sections (right column) */
+section img {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-out;
+}
+
+/* ----------------------------------------------Project Descriptions------------------------------------------*/
 .abt-cont1,
 .abt-cont2,
 .abt-cont3,
 .abt-cont4 {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   padding: 1rem;  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  text-align: center;
 }
 
-@media (max-width: 768px) {
+.abt-cont1 h2,
+.abt-cont2 h2,
+.abt-cont3 h2,
+.abt-cont4 h2 {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  color: var(--font-white);
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(120, 38, 208, 0.659);
+}
+
+.abt-cont1 p,
+.abt-cont2 p,
+.abt-cont3 p,
+.abt-cont4 p {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  color: var(--font-white);
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+/* ----------------------------------------------Footer------------------------------------------*/
+footer {
+  background: linear-gradient(
+    135deg,
+    var(--primary-color) 0%,
+    #25072d 50%,
+    var(--primary-color) 100%
+  );
+  color: var(--font-white);
+  padding: 1rem;
+  margin-top: clamp(3rem, 8vw, 6rem);
+  text-align: center;
+  width: 100vw;
+}
+
+/* ----------------------------------------------Hover transitions------------------------------------------*/
+/* .cont-1:hover {
+  box-shadow: 0px 4px 8px rgba(62, 27, 79, 0.8);
+  transition: all 0.3s ease-in;
+}
+.cont-2:hover {
+  box-shadow: 0px 4px 8px rgba(62, 27, 79, 0.8);
+  transition: all 0.3s ease-in;
+}
+.cont-3:hover {
+  box-shadow: 0px 4px 8px rgba(62, 27, 79, 0.8);
+  transition: all 0.3s ease-in;
+}
+.cont-4:hover {
+  box-shadow: 0px 4px 8px rgba(62, 27, 79, 0.8);
+  transition: all 0.3s ease-in;
+} */
+
+article {
+  transition: all 0.3s ease-out;
+}
+
+article:hover {
+  box-shadow: 0px 4px 8px rgba(62, 27, 79, 0.8);
+  transition: all 0.3s ease-in;
+  border-radius: 20%;
+  cursor: pointer;
+}
+
+section img:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0px 15px 25px rgba(62, 27, 79, 1),
+    0 0 30px rgba(228, 148, 249, 0.3);
+  border-color: var(--accent-color);
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* ----------------------------------------------Tablet Styles (768px and up)------------------------------------------*/
+@media (min-width: 768px) {
+  nav {
+    width: 95vw;
+    padding: 1rem 1.5rem;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  nav ul {
+    justify-content: flex-end;
+    width: auto;
+  }
+
+  nav ul li {
+    margin: 0.3rem 0.6rem;
+  }
+
+  nav ul li a {
+    font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+    padding: 0.5rem;
+  }
+
+  nav ul li a::after {
+    left: 0.5rem;
+  }
+
+  nav ul li a:hover::after,
+  nav ul li a.active-nav::after {
+    width: calc(100% - 1rem);
+  }
+
+  .logo {
+    text-align: left;
+  }
+
+  .proj-header {
+    margin-top: 10rem;
+  }
+
   main {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
     grid-template-areas:
-      "cont1"
-      "abt1"
-      "cont2"
-      "abt2"
-      "cont3"
-      "abt3"
-      "cont4"
-      "abt4";
+      "cont1   abt1"
+      "abt2    cont2"
+      "cont3   abt3"
+      "abt4    cont4";
+    width: 80vw;
+    max-width: 1200px;
+    padding: 3rem;
+    border-radius: 4rem;
     height: auto;
-    width: 400px;
     min-height: 100vh;
+  }
+
+  .abt-cont1,
+  .abt-cont2,
+  .abt-cont3,
+  .abt-cont4 {
+    text-align: left;
+  }
+
+  section img {
+    width: clamp(150px, 20vw, 300px);
+    height: clamp(200px, 25vh, 400px);
+    object-fit: cover;
+  }
+}
+
+/* ----------------------------------------------Desktop Styles (1024px and up)------------------------------------------*/
+@media (min-width: 1024px) {
+  nav {
+    width: min(80vw, 1200px);
+    padding: 2rem;
+    top: 1rem;
+  }
+
+  main {
+    height: 150vh;
+  }
+
+  section img {
+    width: clamp(200px, 15vw, 350px);
+    height: clamp(250px, 20vh, 450px);
   }
 }

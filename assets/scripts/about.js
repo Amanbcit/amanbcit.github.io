@@ -1,5 +1,5 @@
 
-
+//click functionality for aboutme links
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("skills-content");
 
